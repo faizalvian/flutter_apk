@@ -6,6 +6,7 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:draggable_fab/draggable_fab.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -85,7 +86,7 @@ class _MyAppState extends State<MyApp> {
                   InAppWebView(
                     key: webViewKey,
                     initialUrlRequest:
-                        URLRequest(url: Uri.parse("https://172.104.61.166/m")),
+                        URLRequest(url: Uri.parse("isi url web disini")),
                     initialOptions: options,
                     pullToRefreshController: pullToRefreshController,
                     onWebViewCreated: (controller) {
